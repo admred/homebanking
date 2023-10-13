@@ -15,7 +15,7 @@
 
 #### Ejemplos
 
-- [Greeting(https://github.com/mechero/spring-boot-restcontroller)
+- [Greeting](https://github.com/mechero/spring-boot-restcontroller)
 - [Foro](https://github.com/admred/challenge-one-foro-alura)
 - [Hotel](https://github.com/khoubyari/spring-boot-rest-example)
 
