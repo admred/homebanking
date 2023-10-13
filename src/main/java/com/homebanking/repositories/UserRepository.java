@@ -17,10 +17,10 @@ public class UserRepository {
     private List<User> users;
     public UserRepository(){
         users = new ArrayList<>();
-        users.add(new User(0l,"argento333@example.com","password123","Pepe Argento"));
-        users.add(new User(1l,"liome32@exmaple.com","messirve","Lionel Messi"));
-        users.add(new User(2l,"apple123@example.com","apple123","Steve Jobs"));
-        users.add(new User(3l,"sanmartin69@example.com","martin69","San Martin"));
+        createUser(new User(null,"argento333@example.com","password123","Pepe Argento"));
+        createUser(new User(null,"liome32@exmaple.com","messirve","Lionel Messi"));
+        createUser(new User(null,"apple123@example.com","apple123","Steve Jobs"));
+        createUser(new User(null,"sanmartin69@example.com","martin69","San Martin"));
     }
 
     public Long createUser(User user){
