@@ -36,6 +36,4 @@ build/
 ### idea, maven
 .idea/
 target/
-.mvn
-mvnw*
-
+*.db

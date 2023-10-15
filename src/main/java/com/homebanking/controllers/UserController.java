@@ -1,8 +1,8 @@
 package com.homebanking.controllers;
 
-import com.homebanking.entities.User;
 import com.homebanking.entities.dtos.UserDto;
 import com.homebanking.entities.dtos.UserRegisterDto;
+import com.homebanking.entities.dtos.UserUpdateDto;
 import com.homebanking.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -17,33 +17,37 @@ public class UserController {
     @Autowired
     private final UserService service;
 
-    public UserController(UserService service){
+    public UserController(UserService service) {
         this.service = service;
     }
+
     @GetMapping("/list")
-    public List<UserDto> getUsers(){
+    public List<UserDto> getUsers() {
         return service.getUsers();
     }
 
-    @GetMapping("/get/{id}")
-    public UserDto getUserById(@PathVariable Long id){
+    @GetMapping("/detail/{id}")
+    public UserDto getUserById(@PathVariable Long id) {
         return service.getById(id);
     }
 
     @PostMapping("/create")
-    public void createUser(@RequestBody UserRegisterDto dto) {
-        service.createUser(dto);
+    public Long createUser(@RequestBody UserRegisterDto dto) {
+        return service.createUser(dto);
     }
 
-    @GetMapping("/update/{id}")
-    public void updateGet(@PathVariable Long id) {
+    @PutMapping("/update/{id}")
+    public void updateFullUser(@PathVariable Long id, @RequestBody UserUpdateDto dto) {
         // TODO:
     }
 
-    @PostMapping("/update/{id}")
-    public void updatePost(@PathVariable Long id,@RequestBody UserDto userDto) {
+    @PatchMapping("/update/{id}")
+    public void updatePartialUser(@PathVariable Long id, @RequestBody UserUpdateDto dto) {
         // TODO:
-
     }
 
+    @DeleteMapping("/delete/{id}")
+    public void deleteUser(@PathVariable Long id) {
+        // TODO:
+    }
 }

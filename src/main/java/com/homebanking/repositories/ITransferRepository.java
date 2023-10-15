@@ -3,5 +3,6 @@ package com.homebanking.repositories;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class TransferRepository {
+public interface ITransferRepository {
+    // TODO:
 }

@@ -2,6 +2,7 @@ package com.homebanking.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/accounts/")
+@RestController("/api/account/")
 public class AccountController {
+    // TODO:
 }

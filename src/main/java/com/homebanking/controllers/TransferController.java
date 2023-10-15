@@ -2,6 +2,7 @@ package com.homebanking.controllers;
 
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/transfers/")
+@RestController("/api/transfer/")
 public class TransferController {
+    // TODO:
 }
