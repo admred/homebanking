@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<title>Test</title>
+</head>
+<body>
+<p>Endpoints</p>
+	<ul type="none">
+		<li><a href="/api/user/list">Listado</a></li>
+		<li><a href="/api/user/create" method="POST">Crear</a></li>
+		<li><a href="/api/user/detail/1">Detalle</a></li>
+		<li><a href="/api/user/update/1" method="PUT">Actualizar (todo)</a></li>
+		<li><a href="/api/user/update/1" method="PATCH">Actualizar (una parte)</a></li>
+		<li><a href="/api/user/delete/1" method="DELETE">Borrar</a></li>
+	</ul>
+<div id="app">{{message}}</div>
+<script>
+	const {createApp,ref}=Vue
+    createApp({
+        setup(){
+            const message=ref("Hello Vue!")
+            return {message}
+        }
+    }).mount("#app")
+</script>
+</body>
+</html>

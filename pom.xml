@@ -8,7 +8,7 @@
         <version>3.1.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.finance</groupId>
+    <groupId>com.cueva.financiera</groupId>
     <artifactId>homebanking</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>homebanking</name>

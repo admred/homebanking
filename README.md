@@ -28,7 +28,7 @@ curl "http://localhost:8080/api/user/list" -H "accept: application/json"
 
 ##### Obtener un usuario en particular
 ```
-curl "http://localhost:8080/api/user/get/1"   -H "accept: application/json"
+curl "http://localhost:8080/api/user/detail/1"   -H "accept: application/json"
 
 {"id":1,"email":"liome32@exmaple.com","fullname":"Lionel Messi"}
 
