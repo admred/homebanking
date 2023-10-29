@@ -4,7 +4,7 @@ import com.homebanking.entities.User;
 import com.homebanking.entities.dtos.UserDto;
 import com.homebanking.entities.dtos.UserRegisterDto;
 import com.homebanking.mappers.UserMapper;
-import com.homebanking.repositories.IUserRepository;
+import com.homebanking.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,11 +13,11 @@ import java.util.stream.Collectors;
 @Service
 public class UserService {
 
-    private final IUserRepository repository;
+    private final UserRepository repository;
 
     private final UserMapper mapper = new UserMapper();
 
-    public UserService(IUserRepository repository) {
+    public UserService(UserRepository repository) {
         this.repository = repository;
     }
 

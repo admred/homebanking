@@ -4,7 +4,6 @@ import com.homebanking.entities.dtos.UserDto;
 import com.homebanking.entities.dtos.UserRegisterDto;
 import com.homebanking.entities.dtos.UserUpdateDto;
 import com.homebanking.services.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,7 +13,6 @@ import java.util.List;
 @RequestMapping("/api/user")
 public class UserController {
 
-    @Autowired
     private final UserService service;
 
     public UserController(UserService service) {
